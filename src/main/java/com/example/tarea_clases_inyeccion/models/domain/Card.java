@@ -13,8 +13,8 @@ public class Card {
     private String titulo;
     @Value("${card.empresa}")
     private String empresa;
-    @Value("${card.correoEmpresa}")
-    private String correoEmpresa;
+    @Value("${card.webEmpresa}")
+    private String webEmpresa;
 
     @Value("${card.direccion}")
     private String direccion;
@@ -37,12 +37,12 @@ public class Card {
         this.empresa = empresa;
     }
 
-    public String getCorreoEmpresa() {
-        return correoEmpresa;
+    public String getWebEmpresa() {
+        return webEmpresa;
     }
 
-    public void setCorreoEmpresa(String correoEmpresa) {
-        this.correoEmpresa = correoEmpresa;
+    public void setWebEmpresa(String correoEmpresa) {
+        this.webEmpresa = correoEmpresa;
     }
 
     public List<Empleado> getEmpleado() {

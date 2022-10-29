@@ -10,17 +10,19 @@ public class Empleado {
     private String apellido;
     private String correo;
     private String celular;
-
     private String cargo;
     private String imgUser;
 
-    public Empleado(String nombre, String apellido, String correo, String celular, String cargo, String imgUser) {
+    private String horario;
+
+    public Empleado(String nombre, String apellido, String correo, String celular, String cargo, String imgUser, String horario) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
         this.celular = celular;
         this.cargo = cargo;
         this.imgUser = imgUser;
+        this.horario = horario;
     }
 
     public String getNombre() {
@@ -69,5 +71,13 @@ public class Empleado {
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
 }
