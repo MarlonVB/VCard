@@ -17,19 +17,19 @@ public class AppConfig {
                 Empleado(
                 "Marlon",
                 "Velez",
-                "Ecuador",
-                "Cuenca",
                 "marlonvelez@gmail.com",
-                "0979574883");
+                "0979574883",
+                "Gerente General",
+                "https://i.postimg.cc/zfB4vXf9/avatar-m.png");
 
         Empleado e2 = new
                 Empleado(
                 "William",
                 "Tocto",
-                "Ecuador",
-                "Nabon",
                 "williamtocto@gmail.com",
-                "0974851266");
+                "0974851266",
+                "Ejecutivo Administrador",
+                "https://i.postimg.cc/zfB4vXf9/avatar-m.png");
 
         return Arrays.asList(e1,e2);
     }

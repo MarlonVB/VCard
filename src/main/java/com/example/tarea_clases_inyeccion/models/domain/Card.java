@@ -15,6 +15,9 @@ public class Card {
     private String empresa;
     @Value("${card.correoEmpresa}")
     private String correoEmpresa;
+
+    @Value("${card.direccion}")
+    private String direccion;
     @Autowired
     private List<Empleado> empleado;
 
@@ -48,5 +51,13 @@ public class Card {
 
     public void setEmpleado(List<Empleado> empleado) {
         this.empleado = empleado;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 }

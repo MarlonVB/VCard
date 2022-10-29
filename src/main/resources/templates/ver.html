@@ -11,22 +11,20 @@
 <h3 th:text="${card.titulo}"></h3>
 <h4>CARTAS</h4>
 <div class="container text-center" th:each="emp: ${card.empleado}">
-    <div class="prueba">
-        HOLA
-    </div>
     <div class="row shadow p-3 mb-5 bg-body rounded">
         <div class="col bg-danger text-white">
-            Column
+            <img class="rounded mx-auto d-block" th:src="${emp.imgUser}" width="200px">
+            <h2 class="fw-bold text-uppercase" th:text="${emp.nombre +' '+ emp.apellido}"></h2>
+            <p class="fs-5 text-uppercase" th:text="${emp.cargo}"></p>
+            <p class="fs-6 text-capitaliz" th:text="${card.direccion}"></p>
+            <small class="border fs-6 text-capitaliz p-1" th:text="${card.empresa}"></small>
+            <br>
+            <br>
         </div>
-        <div class="col">
+        <div class="col bg-light text-dark">
             Column
         </div>
     </div>
-<!--    <p th:text="${card.empresa}"></p>-->
-<!--    <p th:text="${card.correoEmpresa}"></p>-->
-<!--    <p th:text="${emp.nombre}"></p>-->
-<!--    <p th:text="${emp.apellido}"></p>-->
-<!--    <hr>-->
 </div>
 </body>
 </html>

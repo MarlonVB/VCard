@@ -6,26 +6,21 @@ import org.springframework.stereotype.Component;
 //@Component
 public class Empleado {
 
-    //@Value("{empleado.nombre}")
     private String nombre;
-    //@Value("{empleado.apellido}")
     private String apellido;
-    //@Value("{empleado.paisOrigen}")
-    private String paisOrigen;
-    //@Value("{empleado.ciudadOrigen}")
-    private String ciudadOrigen;
-    //@Value("{empleado.correo}")
     private String correo;
-    //@Value("{empleado.celular}")
     private String celular;
 
-    public Empleado(String nombre, String apellido, String paisOrigen, String ciudadOrigen, String correo, String celular) {
+    private String cargo;
+    private String imgUser;
+
+    public Empleado(String nombre, String apellido, String correo, String celular, String cargo, String imgUser) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.paisOrigen = paisOrigen;
-        this.ciudadOrigen = ciudadOrigen;
         this.correo = correo;
         this.celular = celular;
+        this.cargo = cargo;
+        this.imgUser = imgUser;
     }
 
     public String getNombre() {
@@ -44,22 +39,6 @@ public class Empleado {
         this.apellido = apellido;
     }
 
-    public String getPaisOrigen() {
-        return paisOrigen;
-    }
-
-    public void setPaisOrigen(String paisOrigen) {
-        this.paisOrigen = paisOrigen;
-    }
-
-    public String getCiudadOrigen() {
-        return ciudadOrigen;
-    }
-
-    public void setCiudadOrigen(String ciudadOrigen) {
-        this.ciudadOrigen = ciudadOrigen;
-    }
-
     public String getCorreo() {
         return correo;
     }
@@ -74,5 +53,21 @@ public class Empleado {
 
     public void setCelular(String celular) {
         this.celular = celular;
+    }
+
+    public String getImgUser() {
+        return imgUser;
+    }
+
+    public void setImgUser(String imgUser) {
+        this.imgUser = imgUser;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 }
